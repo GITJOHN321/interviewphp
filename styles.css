@@ -1,0 +1,131 @@
+:root {
+    --color1: #001336;
+    --color2: #007cc4;
+    --color3: #bfdbfe;
+    --color4: white;
+    --color5: rgb(61, 139, 255);
+}
+
+.container {
+    display: flex;
+    padding-right: 9px;
+    padding-left: 9px;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh-100px);
+}
+
+.panel {
+    background-color: var(--color4);
+    width: 30em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 0.5em;
+    box-shadow: #001336;
+}
+
+.head {
+    background-color: var(--color1) !important;
+    color: var(--color4) !important;
+    position: relative;
+    font: bold;
+    padding-right: 1em;
+    padding-left: 2em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    margin-bottom: 0.1em;
+}
+
+.head::after {
+    content: "";
+    background-color: var(--color2) !important;
+    height: 100%;
+    width: 7%;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+}
+
+.content {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.grid {
+    display: grid;
+    padding-left: 5em;
+    padding-right: 5em;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-card {
+    display: grid;
+    padding-left: 3em;
+    padding-bottom: 1em;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    
+}
+label{
+    display:flex;
+    align-items: center;
+}
+
+.btn {
+    border: 2px solid #0066cc;
+    color: var(--color4);
+    padding: 14px 28px;
+    cursor: pointer;
+    border-radius: 2em;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.btn-select {
+    border: 2.5px solid #0066cc;
+    color: var(--color1);
+    padding: 7px 14px;
+    cursor: pointer;
+    border-radius: 2em;
+
+
+}
+
+option {
+
+    border-radius: 0.25em;
+}
+
+option:active {
+    background-color: #007cc4;
+}
+
+.primary {
+    background-color: var(--color2);
+    border: 2px solid #007bff;
+    transition: 500ms ease;
+}
+
+.primary:hover {
+    background: var(--color1);
+    color: var(--color4);
+    transition: 500ms ease;
+}
+
+.subtitle {
+
+    font-weight: 700 !important;
+}
+
+body {
+    background: var(--color3);
+    color: #111827;
+
+
+}
